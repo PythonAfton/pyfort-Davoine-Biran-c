@@ -32,14 +32,16 @@ def composer_equipe():
 
 
 def menu_epreuves():
-    epreuve = int(input("Saisir le numéro de l'epreuve \n 1 : Mathématiques \n 2 : Logique \n 3 : Hasard \n 4 : Enigme du Père Fouras \n Votre réponse : "))
-    if epreuve == 1:
+    epreuve = input("Saisir le numéro de l'epreuve \n 1 : Mathématiques \n 2 : Logique \n 3 : Hasard \n 4 : Enigme du Père Fouras \n Votre réponse : ")
+    while epreuve not in ['1','2','3','4']:
+        epreuve = input("Saisir le numéro de l'epreuve \n 1 : Mathématiques \n 2 : Logique \n 3 : Hasard \n 4 : Enigme du Père Fouras \n Votre réponse : ")
+    if epreuve == '1':
         return epreuve_math()
-    elif epreuve == 2:
+    elif epreuve == '2':
         return epreuve_logique()
-    elif epreuve == 3:
+    elif epreuve == '3':
         return epreuve_hasard()
-    elif epreuve == 4:
+    elif epreuve == '4':
         return enigme_pere_fouras()
 
 
