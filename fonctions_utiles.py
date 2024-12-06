@@ -32,11 +32,11 @@ def composer_equipe():
 
 
 def menu_epreuves():
-    epreuve = int(input("Saisir le numéro de l'epreuve: "))
+    epreuve = int(input("Saisir le numéro de l'epreuve (1 : Mathématiques / 2 : Logique / 3 : Hasard / 4 : Enigme du Père Fouras) : "))
     if epreuve == 1:
         return epreuve_math()
     elif epreuve == 2:
-        return jeu_bataille_navale()
+        return epreuve_logique()
     elif epreuve == 3:
         return epreuve_hasard()
     elif epreuve == 4:
