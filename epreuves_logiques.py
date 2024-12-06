@@ -94,6 +94,8 @@ def coup_maitre(grille, symbole):
 
 def tour_joueur(grille):
     input_joueur = tuple(input("Joueur X, c'est à vous. Où voulez-vous placer votre symbole ? "))
+    while len(input_joueur) != 3 or (input_joueur[0] <= '0' or input_joueur[0] >= '9') or (input_joueur[2] <= '0' or input_joueur[2] >= '9'):
+        input_joueur = tuple(input("Joueur X, c'est à vous. Où voulez-vous placer votre symbole ? "))
     coup_joueur = input_joueur[0], input_joueur[2]
     while grille[int(coup_joueur[0])-1][int(coup_joueur[1])-1] != " ":
         input_joueur = tuple(input("Joueur X, c'est à vous. Où voulez-vous placer votre symbole ? "))
@@ -122,7 +124,7 @@ def verifier_resultat(grille):
 
 
 def jeu_tictactoe():
-    grille = [[" ", " ", " "], [" ", "  ", " "], [" ", " ", " "]]
+    grille = [[" ", " ", " "], [" ", " ", " "], [" ", " ", " "]]
     print("Pour jouer, entrez les coordonnées de votre coup sous forme ligne, colonne (ex: 1,2). ")
     afficher_grille(grille)
     tourjoueur = True
@@ -172,6 +174,8 @@ def affiche_grille(grille, message):
 
 def demande_position():
     entree_joueur = tuple(input("Entrez la position (ligne,colonne) entre 1 et 3 (ex: 1,2) :"))
+    while len(entree_joueur) != 3 or (entree_joueur[0] <= '0' or entree_joueur[0] >= '9') or (entree_joueur[2] <= '0' or entree_joueur[2] >= '9'):
+        entree_joueur = tuple(input("Entrez la position (ligne,colonne) entre 1 et 3 (ex: 1,2) :"))
     position_joueur = int(entree_joueur[0])-1, int(entree_joueur[2])-1
     while position_joueur[0] not in (0, 1, 2) or position_joueur[1] not in (0, 1, 2):
         entree_joueur = tuple(input("Entrez la position (ligne,colonne) entre 1 et 3 (ex: 1,2) :"))
