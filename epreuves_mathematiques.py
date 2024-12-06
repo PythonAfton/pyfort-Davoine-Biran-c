@@ -1,3 +1,4 @@
+# Utilisation du module 'random' pour les 3 jeux de hasard
 import random
 
 
