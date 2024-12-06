@@ -9,12 +9,12 @@ def introduction():
 
 
 def composer_equipe():
-    nb_joueur = int(input("Combien de joueur souhaitez vous inscrire ? "))
-    while nb_joueur > 3:
-        nb_joueur = int(input("Combien de joueur souhaitez vous inscrire ?(3 maximum) "))
+    nb_joueur = input("Combien de joueur souhaitez vous inscrire ? ")
+    while nb_joueur[0] > '3' or nb_joueur[0] <= '0':
+        nb_joueur = input("Combien de joueur souhaitez vous inscrire ?(3 maximum) ")
     equipe = []
     leader = False
-    for i in range(nb_joueur):
+    for i in range(int(nb_joueur)):
         joueur = {}
         joueur["nom"] = input("Saisir le nom du joueur: ")
         joueur["profession"] = input("Saisir la profession du joueur: ")
