@@ -7,7 +7,7 @@ def charger_enigmes(fichier):
      with open(fichier, 'r', encoding='utf-8') as f:
           donnees = json.load(f)  # Chargement des données JSON dans une structure Python
      # Affichage de toute la structure 'donnees' pour visualiser le contenu chargé
-     fichier.close()
+     f.close()
      return donnees
 
 
