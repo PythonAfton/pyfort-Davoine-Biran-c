@@ -32,7 +32,7 @@ def composer_equipe():
 
 
 def menu_epreuves():
-    epreuve = int(input("Saisir le numéro de l'epreuve (1 : Mathématiques / 2 : Logique / 3 : Hasard / 4 : Enigme du Père Fouras) : "))
+    epreuve = int(input("Saisir le numéro de l'epreuve \n 1 : Mathématiques \n 2 : Logique \n 3 : Hasard \n 4 : Enigme du Père Fouras \n Votre réponse : "))
     if epreuve == 1:
         return epreuve_math()
     elif epreuve == 2:
