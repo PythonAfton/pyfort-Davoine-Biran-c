@@ -10,7 +10,7 @@ def factorielle(n):
 # Epreuve : Déterminer/Calculer la factorielle d'un nombre choisi aléatoirement
 ## La fonction renvoie 'True' si le joueur gagne, 'False' si le joueur ne gagne pas
 def epreuve_math_factorielle():
-    n = random.randint(1, 10)                   ## Tirage au sort pour déterminer la factorielle à calculer
+    n = random.randint(1, 10)                   ## Tirage au hasard pour déterminer la factorielle à calculer
     print("Calculer la factorielle de", n, ".")
     resultat = factorielle(n)
     reponse_utilisateur = int(input("Votre réponse: "))
