@@ -17,7 +17,7 @@ def enigme_pere_fouras():
      print(enigme['question'])
      essai = 3
      while essai > 0:
-          reponse_utilisateur = input("Saisir une reponse")
+          reponse_utilisateur = input("Saisir une reponse : ")
           reponse_utilisateur = reponse_utilisateur.lower()
           if reponse_utilisateur == enigme["reponse"].lower():
                print("Bonne reponse. Vous gagnez une clef")
