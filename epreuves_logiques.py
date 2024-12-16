@@ -1,6 +1,7 @@
+#Module random pour les exercices "" "" et ""
 import random
 
-
+# Fonction qui affiche n batonnets sur l'interface
 def affiche_batonets(n):
     print("|"*n)
 
