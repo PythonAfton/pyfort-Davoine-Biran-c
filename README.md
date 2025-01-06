@@ -81,6 +81,7 @@ o Fonctions utilisées - "epreuve_logiques" :
       - Rédaction de "epreuve_mathematiques"
       - Rédaction de "epreuve_hasard"
       - Rédaction de "enigme_pere_fouras"
+      - Rédaction de "main.py"
       - Rédaction de "README" (30/12)
 
   o Clément DAVOINE
